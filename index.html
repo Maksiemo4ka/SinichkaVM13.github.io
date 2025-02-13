@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NauSinVM</title>
+    <script src="main.js" defer></script>
+    <link rel = 'stylesheet' href="style.css"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <h1 class = 'zagolovok'>Маленькая история любви</h1>
+</head>
+<body>
+
+    <div class = 'first'>
+        <div class= 'first_info'>
+            <h3>9 сентября 2024</h3>
+            <p class = 'p_first_info'>Самое начало истории: ничего не подозревающий Максимка пришел в 10 «Б» класс к такой же ни о чем не догадывающейся Виктории. Учились они себе спокойно, пока у обоих в голове не переклинило: "Черт, я хочу быть с этим человеком".</p>
+         </div>
+        <div class = 'first_slider middle'>
+            <div class = 'slides'>
+                <input type="radio" name="r" id = 'r1' checked>
+                <input type="radio" name="r" id = 'r2'>
+                <input type="radio" name="r" id = 'r3'>
+                <input type="radio" name="r" id = 'r4'>
+    
+
+                <div class ='slide s1'><img src = 'img/second_slider(2).jpg' alt=""></div>
+                <div class ='slide'><img src = 'img/first_slides(4).jpg' alt=""></div>
+                <div class ='slide'><img src = 'img/first_slides(3).jpg' alt=""></div>
+                <div class ='slide'><img src = 'img/first_slides(1).jpg' alt=""></div>
+            </div>
+            
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                </div>   
+        </div>    
+    </div>
+
+
+
+    <div class = 'sesond'>
+        <div class = 'video_perelom'>
+            <div class= 'perelom_info'>
+                <h3>27 сентября 2024</h3>
+                <p class = 'p_perelom_info'>Этот день стал переломным. Взял Макс гитару, дабы вспомнить, на что он вообще способен с ней в руке, догадываться о том, что сможет хоть как-то этим привлечь ее внимание, и не мог. Именно тогда Виктория поняла, что влюбилась. И понеслось...</p>
+            </div>
+    
+            <video class="perelom_vid" width="285" height="499" controls>
+                <source src="img/video_perelom.MOV" type="video/webm">
+            </video>
+        </div>
+
+        <div class= 'second_info'>
+            <h3>15 октября - 27 декабря</h3>
+            <p class = 'p_second_info'>Началась совместная движуха: олимпиада, праздничные сценки, подготовка к различным мероприятиям с Павлусик, новогодняя постановка, чаепития, посиделки после уроков, везде мы контактировали и делали первые шаги. И в конце концов дискотека.</p>
+        </div>
+        <div class = 'second_slider second_middle'>
+            <div class = 'slides_2'>
+                <input type="radio" name="r_2" id = 'r1_2' checked>
+                <input type="radio" name="r_2" id = 'r2_2'>
+                <input type="radio" name="r_2" id = 'r3_2'>
+                <input type="radio" name="r_2" id = 'r4_2'>
+    
+
+                <div class ='slide_2 s2'><img src = 'img/second_slider(###1).jpg' alt=""></div>
+                <div class ='slide_2'><img src = 'img/second_slider(###2).jpg' alt=""></div>
+                <div class ='slide_2'><img src = 'img/second_slider(###3).jpg' alt=""></div>
+                <div class ='slide_2'><img src = 'img/second_slider(###4).jpg' alt=""></div>
+            </div>
+
+            <div class="second_navigation">
+                <label for="r1_2" class="bar_2"></label>
+                <label for="r2_2" class="bar_2"></label>
+                <label for="r3_2" class="bar_2"></label>
+                <label for="r4_2" class="bar_2"></label>
+            </div>   
+        </div>    
+    </div>
+
+<!-- Создание историй -->
+
+    <div class="container">
+        <div class="editor">
+            <input type = 'data' id="note_title">
+            <textarea id="note_body" cols="30" rows="10"></textarea>
+            <form id="form" >
+                <button type = 'submit' id="note_create">CREATE A MEMORY</button>
+            </form>
+        </div>
+        <div class="notes-container">
+        <!-- ! тут работает RenderNotes -->
+        </div>
+    </div>
+</body>
+</html>  
